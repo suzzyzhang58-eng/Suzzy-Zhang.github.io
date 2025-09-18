@@ -1,3 +1,4 @@
+html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Xueying (Suzzy) Zhang</title>
+  <title>Xueying (Suzzy) Zhang - Accounting Professional</title>
   <meta content="Accounting Graduate - Xueying (Suzzy) Zhang" name="description">
   <meta content="Accounting, Xero, Excel, Financial Reporting" name="keywords">
 
@@ -14,13 +15,10 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,600,700|Poppins:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,600,700|Poppins:300,400,500,600,700" rel="stylesheet">
   
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-  
-  <!-- Boxicons -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   
   <!-- AOS Animation Library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -48,6 +46,7 @@
       color: var(--text-color);
       line-height: 1.6;
       overflow-x: hidden;
+      font-size: 15px;
     }
     
     h1, h2, h3, h4, h5, h6 {
@@ -66,15 +65,22 @@
       color: #0b7db1;
     }
     
+    .container {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    
     .section-title {
       text-align: center;
-      padding-bottom: 50px;
+      padding-bottom: 40px;
     }
     
     .section-title h2 {
       font-size: 32px;
       font-weight: 700;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       padding-bottom: 10px;
       position: relative;
       display: inline-block;
@@ -99,8 +105,8 @@
     
     .section-title p {
       margin-bottom: 0;
-      font-style: italic;
       color: #7a7a7a;
+      font-size: 16px;
     }
     
     /* Header Styles */
@@ -132,7 +138,7 @@
     }
     
     #header h1 {
-      font-size: 56px;
+      font-size: 48px;
       margin: 0 0 15px 0;
       color: white;
       opacity: 0;
@@ -141,7 +147,7 @@
     }
     
     #header h2 {
-      font-size: 28px;
+      font-size: 24px;
       margin-bottom: 40px;
       color: rgba(255, 255, 255, 0.9);
       opacity: 0;
@@ -175,8 +181,8 @@
     .navbar a {
       color: white;
       font-weight: 600;
-      font-size: 16px;
-      padding: 10px 0;
+      font-size: 15px;
+      padding: 8px 0;
       position: relative;
     }
     
@@ -209,7 +215,7 @@
     
     .social-links a {
       color: white;
-      font-size: 24px;
+      font-size: 22px;
       margin: 0 10px;
       display: inline-block;
       transition: var(--transition);
@@ -252,7 +258,7 @@
     
     /* About Section */
     #about {
-      padding: 100px 0;
+      padding: 80px 0;
       background-color: var(--background-color);
       position: relative;
       overflow: hidden;
@@ -284,7 +290,7 @@
     
     #about .content h3 {
       font-weight: 700;
-      font-size: 26px;
+      font-size: 24px;
       margin-bottom: 20px;
     }
     
@@ -294,7 +300,7 @@
     }
     
     #about .content ul li {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       display: flex;
       align-items: center;
       transition: var(--transition);
@@ -314,8 +320,8 @@
       color: var(--primary-color);
       line-height: 0;
       background: rgba(20, 157, 221, 0.1);
-      width: 36px;
-      height: 36px;
+      width: 34px;
+      height: 34px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -334,22 +340,60 @@
     }
     
     #about img {
-      border-radius: 10px;
+      border-radius: 8px;
       box-shadow: var(--shadow);
       transition: var(--transition);
       transform: perspective(1000px) rotateY(-15deg);
       position: relative;
       z-index: 1;
+      max-width: 85%;
     }
     
     #about img:hover {
       transform: perspective(1000px) rotateY(0deg);
     }
     
+    /* Skills Section */
+    #skills {
+      padding: 80px 0;
+      position: relative;
+    }
+    
+    .skills-content {
+      margin-top: 30px;
+    }
+    
+    .progress {
+      height: 10px;
+      margin-bottom: 20px;
+      background: #e9ecef;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    
+    .progress-bar {
+      height: 100%;
+      background: var(--primary-color);
+      border-radius: 5px;
+      transition: width 1s ease-in-out;
+    }
+    
+    .skill {
+      margin-bottom: 25px;
+    }
+    
+    .skill-name {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    
     /* Resume Section */
     #resume {
-      padding: 100px 0;
+      padding: 80px 0;
       position: relative;
+      background-color: var(--background-color);
     }
     
     #resume::before {
@@ -361,12 +405,12 @@
       height: 200px;
       background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23149ddd' fill-opacity='0.1' d='M0,128L48,117.3C96,107,192,85,288,112C384,139,480,213,576,218.7C672,224,768,160,864,138.7C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E") no-repeat;
       background-size: contain;
-      z-index: -1;
+      z-index: 0;
       opacity: 0.5;
     }
     
     .resume .resume-title {
-      font-size: 26px;
+      font-size: 22px;
       font-weight: 700;
       margin-top: 20px;
       margin-bottom: 20px;
@@ -460,8 +504,7 @@
     
     /* Portfolio Section */
     #portfolio {
-      padding: 100px 0;
-      background-color: var(--background-color);
+      padding: 80px 0;
       position: relative;
       overflow: hidden;
     }
@@ -558,8 +601,9 @@
     
     /* Contact Section */
     #contact {
-      padding: 100px 0;
+      padding: 80px 0;
       position: relative;
+      background-color: var(--background-color);
     }
     
     #contact::before {
@@ -575,7 +619,7 @@
     }
     
     .info {
-      padding: 30px;
+      padding: 25px;
       background: white;
       width: 100%;
       box-shadow: var(--shadow);
@@ -604,7 +648,7 @@
     
     .info h4 {
       padding: 0 0 0 60px;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 600;
       margin-bottom: 5px;
     }
@@ -663,7 +707,7 @@
     
     /* Footer */
     #footer {
-      padding: 30px 0;
+      padding: 25px 0;
       background: var(--secondary-color);
       color: white;
       text-align: center;
@@ -694,13 +738,13 @@
     }
     
     #footer h3 {
-      font-size: 24px;
+      font-size: 22px;
       margin: 0 0 10px 0;
       color: white;
     }
     
     #footer p {
-      font-size: 16px;
+      font-size: 15px;
       margin-bottom: 20px;
     }
     
@@ -795,14 +839,46 @@
       transition: width 0.2s ease;
     }
     
+    /* Grid System */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+    
+    .col-lg-4, .col-lg-6, .col-lg-8 {
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    
+    @media (min-width: 992px) {
+      .col-lg-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+      }
+      
+      .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      
+      .col-lg-8 {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+      }
+    }
+    
     /* Responsive Design */
     @media (max-width: 992px) {
       #header h1 {
-        font-size: 42px;
+        font-size: 36px;
       }
       
       #header h2 {
-        font-size: 22px;
+        font-size: 20px;
       }
       
       .navbar ul {
@@ -810,12 +886,17 @@
       }
       
       .navbar li {
-        margin: 10px 0;
+        margin: 8px 0;
       }
       
       #about img {
         transform: perspective(1000px) rotateY(0deg);
         margin-bottom: 30px;
+        max-width: 100%;
+      }
+      
+      .section-title h2 {
+        font-size: 28px;
       }
     }
   </style>
@@ -837,6 +918,7 @@
         <ul>
           <li><a class="nav-link active" href="#header">Home</a></li>
           <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
           <li><a class="nav-link" href="#resume">Resume</a></li>
           <li><a class="nav-link" href="#portfolio">Projects</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
@@ -844,9 +926,9 @@
       </nav>
 
       <div class="social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
         <a href="#" class="github"><i class="bi bi-github"></i></a>
+        <a href="#" class="email"><i class="bi bi-envelope"></i></a>
       </div>
       
       <div class="scroll-down">
@@ -897,6 +979,88 @@
 
     </div>
   </section><!-- End About Section -->
+
+  <!-- ======= Skills Section ======= -->
+  <section id="skills" class="skills">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>My Technical Abilities</p>
+      </div>
+
+      <div class="row skills-content">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          
+          <div class="skill">
+            <div class="skill-name">
+              <span>Xero Accounting Software</span>
+              <span>95%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" data-width="95"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">
+              <span>Microsoft Excel</span>
+              <span>90%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" data-width="90"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">
+              <span>Financial Reporting</span>
+              <span>85%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" data-width="85"></div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          
+          <div class="skill">
+            <div class="skill-name">
+              <span>GST Filing & Compliance</span>
+              <span>90%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" data-width="90"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">
+              <span>Bank Reconciliations</span>
+              <span>95%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" data-width="95"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">
+              <span>Financial Analysis</span>
+              <span>80%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" data-width="80"></div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Skills Section -->
 
   <!-- ======= Resume Section ======= -->
   <section id="resume" class="resume">
