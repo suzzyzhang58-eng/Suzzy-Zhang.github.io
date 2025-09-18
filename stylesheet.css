@@ -139,3 +139,104 @@ span.highlight_font {
 span.unavailable {
   color: #c6d6df;
 }
+
+/* 添加以下样式到您的style.css文件中 */
+
+/* 图标样式增强 */
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #149ddd;
+  transform: translateY(-3px);
+}
+
+/* 导航栏样式增强 */
+.navbar a {
+  position: relative;
+  padding: 10px 0;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #149ddd;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover::before,
+.navbar .active::before {
+  visibility: visible;
+  width: 100%;
+}
+
+/* 项目卡片样式 */
+.portfolio-item {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* 联系信息图标样式 */
+.info i {
+  font-size: 20px;
+  color: #149ddd;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #d9f1ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.info .email:hover i,
+.info .phone:hover i,
+.info .address:hover i {
+  background: #149ddd;
+  color: #fff;
+}
+
+/* 技能展示样式 */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill-item {
+  background: #149ddd;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.skill-item i {
+  margin-right: 5px;
+}
